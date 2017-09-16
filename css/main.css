@@ -1,0 +1,96 @@
+/* I used some BEM in this code a some ITCSS and some practices of OOCSS */
+/* Defaults styles */
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: arial; }
+
+/* Elements style */
+ul {
+  padding: 0; }
+
+/* Some generic styles */
+.italic {
+  font-style: italic; }
+
+.bold {
+  font-weight: bold; }
+
+.center {
+  margin: 0 auto; }
+
+.center-flex {
+  justify-content: center; }
+
+.distance {
+  margin-top: 10px; }
+
+/* Specific Styles */
+.wrapper {
+  border: 1px solid black;
+  width: 900px;
+  padding: 5px; }
+
+.nav-top {
+  display: flex;
+  justify-content: space-around; }
+
+.nav-top__logo {
+  width: 80px;
+  height: 50px; }
+
+.nav__list {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 15px;
+  margin: 5px; }
+
+.promotion {
+  display: flex; }
+
+.promotion__shoes {
+  width: 800px;
+  height: 400px; }
+
+.mega-sale {
+  display: flex; }
+
+.mega-sale__paragraph {
+  color: #afafaf;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 3px; }
+
+.shoes-container {
+  display: flex;
+  flex-flow: row wrap;
+  height: 400px;
+  width: 600px; }
+
+.shoes-container__blue-and-pink-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 390px;
+  margin: 5px;
+  padding: 0; }
+
+.gray-and-yellow-container__blue {
+  border: 1px solid black;
+  width: 255px;
+  height: 159px;
+  margin: 10px 5px 5px 10px; }
+
+.gray-and-yellow-container__pink {
+  border: 1px solid black;
+  width: 255px;
+  height: 159px;
+  margin: 20px 5px 5px 10px; }
+
+.shoes-container__white-shoe-container {
+  border: 1px solid black;
+  display: flex;
+  flex-grow: 1;
+  height: 390px;
+  margin: 5px;
+  padding: 10px; }
