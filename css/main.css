@@ -29,10 +29,14 @@ ul {
 .flex-items-distance {
   margin: 5px; }
 
+.these-gray-paragraphs {
+  color: #afafaf;
+  font-family: 'Raleway', sans-serif; }
+
 /* Specific Styles */
 .wrapper {
   border: 1px solid black;
-  width: 900px;
+  width: 950px;
   padding: 5px; }
 
 /* Nav Bar */
@@ -56,15 +60,13 @@ ul {
 
 .promotion__shoes {
   width: 800px;
-  height: 400px; }
+  height: 500px; }
 
 /* I created a single div to this paragraph to divide the page better */
 .mega-sale {
   text-align: center; }
 
 .mega-sale__paragraph {
-  color: #afafaf;
-  font-family: 'Raleway', sans-serif;
   letter-spacing: 15px; }
 
 /* 3 shoes */
@@ -106,19 +108,26 @@ ul {
 
 /* Info about how they works */
 .services {
+  border: 1px solid gray;
   display: flex;
+  justify-content: space-around;
   width: 600px;
   height: 130px;
   padding: 10px; }
 
 .services__worldwide {
-  flex-grow: 1; }
+  border-right: 1px solid gray;
+  flex-grow: 1;
+  width: 196px; }
 
 .services__premium {
-  flex-grow: 1; }
+  border-right: 1px solid gray;
+  flex-grow: 1;
+  width: 196px; }
 
 .services__return {
-  flex-grow: 1; }
+  flex-grow: 1;
+  width: 180px; }
 
 .icons {
   color: #4286f4;
@@ -179,26 +188,186 @@ ul {
   text-align: center; }
 
 .items-available__paragraph {
-  color: #afafaf;
-  font-family: 'Raleway', sans-serif;
   letter-spacing: 10px; }
 
-.available-shoes {
-  display: flex;
-  height: 420px; }
-
 /* shop */
+.available-shoes {
+  border-bottom: 1px solid #afafaf;
+  border-left: 1px solid #afafaf;
+  border-right: 1px solid #afafaf;
+  display: flex;
+  height: 450px;
+  width: 890px; }
+
+.available-shoes__featured-shoe {
+  position: relative; }
+
 .featured-shoe__transparent-nike-shoe {
-  height: 420px; }
+  height: 450px;
+  width: 285px; }
+
+.featured-shoe__text {
+  color: #ffe711;
+  position: absolute;
+  top: 10px;
+  left: 10px; }
 
 .available-shoes__in-sale {
-  background: gray;
   display: flex;
   flex-flow: row wrap;
   flex-grow: 5; }
 
 .in-sale__shoes {
+  background: #f7f5f2;
   border-left: 1px solid #afafaf;
   border-top: 1px solid #afafaf;
+  padding: 15px;
   width: 201px;
-  height: 210px; }
+  height: 224px; }
+
+.shoes__shoe {
+  width: 150px;
+  height: 150px; }
+
+.shoes__paragraph {
+  font-size: 10px; }
+
+.view-products {
+  text-align: center; }
+
+.view-products__paragraph {
+  border-bottom: 1px solid #fff;
+  letter-spacing: 15px;
+  transition: border-color 0.5s;
+  width: 330px; }
+  .view-products__paragraph:hover {
+    border-color: #afafaf; }
+
+.social-media-location {
+  background: #ffaa;
+  display: flex;
+  height: 500px;
+  justify-content: space-around; }
+
+.social-media-location__items {
+  width: 400px;
+  height: 400px; }
+
+.social-media-location__social-media {
+  background: #afafaf;
+  display: flex;
+  flex-flow: row wrap; }
+
+.social-media__items {
+  flex-grow: 1;
+  width: 200px;
+  height: 200px; }
+
+.social-media__galeries {
+  padding: 20px;
+  background: #9b42f4;
+  color: white; }
+
+.woman-man__nike-shoes {
+  width: 200px;
+  height: 200px; }
+
+.social-media__instagram {
+  background: #9b42f4;
+  color: white;
+  padding: 10px; }
+
+.instagram__button {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  transition: background 0.5s, color 0.5s; }
+  .instagram__button:hover {
+    background: white;
+    color: #9b42f4; }
+
+.social-media-location__location {
+  background: #ddeeff;
+  display: flex;
+  flex-direction: column; }
+
+.location__san-francisco {
+  background: #2e2e30; }
+
+.san-francisco__img {
+  width: 400px; }
+
+.location__desc {
+  background: #2e2e30;
+  color: white;
+  flex-grow: 1;
+  padding: 10px; }
+
+.newsletter {
+  background: #dbdde0;
+  padding: 50px 10px 50px 10px; }
+
+.newsletter__text {
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  text-align: center;
+  width: 500px; }
+
+.newsletter__text__input {
+  display: flex;
+  margin: 0 auto;
+  width: 300px;
+  height: 30px; }
+
+.input__input {
+  border: 1px solid white;
+  width: 200px;
+  height: 30px;
+  transition: border-color 0.5s; }
+  .input__input:focus {
+    border-color: black; }
+
+.input__button {
+  background: white;
+  border: 0;
+  width: 30px;
+  height: 30px;
+  transition: background 0.5s, color 0.5s; }
+  .input__button:hover {
+    background: black;
+    color: white; }
+
+.hurry-up {
+  text-align: center; }
+
+.hurry-up__paragraph {
+  letter-spacing: 15px; }
+
+.footer {
+  background: #3b3c3d;
+  display: flex;
+  flex-flow: row wrap;
+  height: 200px;
+  width: 940px; }
+
+.footer__divs {
+  width: 200px; }
+
+.footer__logo {
+  padding-top: 50px; }
+
+.nike-logo-white {
+  width: 100px; }
+
+.footer__divs__list {
+  font-size: 10px;
+  list-style-type: none;
+  margin: 20px; }
+
+.divs__list-link {
+  color: white;
+  text-decoration: none; }
+  .divs__list-link:hover {
+    color: #c9e4ff; }
